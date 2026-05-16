@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>InvoiceFlow | Freelance Manager</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow glow1"></div>
+  <div class="bg-glow glow2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+
+    <div class="logo">
+      <i class="fa-solid fa-bolt"></i>
+      NovaInvoice
+    </div>
+
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Dashboard</a></li>
+      <li><a href="client.html">Clients</a></li>
+      <li><a href="invoice.html">Invoices</a></li>
+    </ul>
+
+    <button id="themeToggle">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+
+  </nav>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="dashboard-hero">
+
+      <div class="hero-text">
+        <h1>Freelance Dashboard</h1>
+
+        <p>
+          Track clients, invoices, revenue and productivity in one futuristic workspace ⚡
+        </p>
+      </div>
+
+      <div class="hero-icon">
+        <i class="fa-solid fa-chart-line"></i>
+      </div>
+
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="stats-grid">
+
+      <div class="dashboard-card">
+        <div class="card-icon blue">
+          <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div>
+          <h2 id="totalClients">0</h2>
+          <p>Total Clients</p>
+        </div>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon pink">
+          <i class="fa-solid fa-file-invoice"></i>
+        </div>
+
+        <div>
+          <h2 id="totalInvoices">0</h2>
+          <p>Total Invoices</p>
+        </div>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon green">
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+
+        <div>
+          <h2 id="totalRevenue">$0</h2>
+          <p>Total Revenue</p>
+        </div>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon orange">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div>
+          <h2 id="paidInvoices">0</h2>
+          <p>Paid Invoices</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Dashboard Grid -->
+    <section class="dashboard-grid">
+
+      <!-- Quote Card -->
+      <div class="quote-card">
+
+        <div class="card-title">
+          <i class="fa-solid fa-quote-left"></i>
+          <h2>Motivational Quote</h2>
+        </div>
+
+        <div class="quote-content">
+
+          <p id="quoteText">
+            “Success is not final, failure is not fatal.”
+          </p>
+
+          <span id="quoteAuthor">
+            — Unknown
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- Revenue Card -->
+      <div class="revenue-card">
+
+        <div class="card-title">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h2>Revenue Status</h2>
+        </div>
+
+        <div class="progress-wrapper">
+
+          <div class="progress-box">
+            <span>Paid</span>
+            <div class="progress-bar">
+              <div class="progress paid-progress"></div>
+            </div>
+          </div>
+
+          <div class="progress-box">
+            <span>Unpaid</span>
+            <div class="progress-bar">
+              <div class="progress unpaid-progress"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="activity-card">
+
+      <div class="card-title">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <h2>Recent Activity</h2>
+      </div>
+
+      <div class="activity-list">
+
+        <div class="activity-item">
+          <div class="activity-dot"></div>
+          <p>New client added</p>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-dot"></div>
+          <p>Invoice payment received</p>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-dot"></div>
+          <p>Dashboard updated successfully</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

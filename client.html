@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clients Manager</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow glow1"></div>
+  <div class="bg-glow glow2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bolt"></i>
+      NovaInvoice
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a class="active" href="client.html">Clients</a></li>
+      <li><a href="invoice.html">Invoices</a></li>
+    </ul>
+
+    <button id="themeToggle">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Header -->
+    <section class="hero">
+      <div>
+        <h1>Client Management</h1>
+        <p>
+          Manage your freelance clients with futuristic cyberpunk vibes ⚡
+        </p>
+      </div>
+
+      <div class="stats-card">
+        <h2 id="clientCount">0</h2>
+        <span>Total Clients</span>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form-card">
+      <h2>Add New Client</h2>
+
+      <form id="clientForm">
+
+        <div class="input-grid">
+
+          <div class="input-box">
+            <label>Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="john@email.com"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Company</label>
+            <input
+              type="text"
+              id="company"
+              placeholder="Freelance Inc."
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Notes</label>
+            <input
+              type="text"
+              id="notes"
+              placeholder="VIP Client..."
+            />
+          </div>
+
+        </div>
+
+        <button type="submit" class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+          Add Client
+        </button>
+
+      </form>
+    </section>
+
+    <!-- Client Table -->
+    <section class="table-card">
+
+      <div class="table-header">
+        <h2>Clients List</h2>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search client..."
+        />
+      </div>
+
+      <div class="table-wrapper">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Notes</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="clientTableBody">
+
+            <!-- JS DATA -->
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/clients.js"></script>
+</body>
+</html>
